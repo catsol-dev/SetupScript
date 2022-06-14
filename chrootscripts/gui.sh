@@ -20,7 +20,7 @@ if [ needsxorgtools == "y" ]; then
     pkgselection="${pkgselection} rofi i3status-rs"
 fi
 
-paru -S $pkgselection
+paru -S --needed $pkgselection
 
 # User stuff
 mkdir ~/Theming
