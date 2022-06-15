@@ -32,7 +32,8 @@ swapon $swappartition
 # Section 3 | Everything Before Chroot
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
-mv ./chrootscripts /mnt
+mv ./chrootscript.sh /mnt
+chmod +x /mnt/chrootscript.sh
 
 # Section 4 | Chroot
 arch-chroot /mnt
