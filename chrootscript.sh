@@ -24,3 +24,4 @@ cd /home/$username
 git clone https://aur.archlinux.org/paru.git
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
+EDITOR=nvim visudo
