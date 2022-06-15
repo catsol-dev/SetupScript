@@ -6,6 +6,7 @@ read timezone
 ln -sf /usr/share/zoneinfo/$timezone
 hwclock --systohc
 pacman -S --needed --noconfirm neovim base-devel git fish grub efibootmgr os-prober
+nvim /etc/pacman.conf
 nvim /etc/locale.gen
 locale-gen
 touch /etc/locale.conf
