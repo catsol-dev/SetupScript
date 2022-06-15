@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# This script is meant to be run after the other 2 scripts, logged in as a non root user.
+rustup toolchain install nightly --allow-downgrade --component clippy
+cd ~/paru
+makepkg -si
+
+paru -S xorg plasma sddm dolphin vivaldi rustup python3 python-pip alsa nvidia nvidia-settings ttf-dejavu ttf-croscore gnu-free-fonts kvantum cmake qt5-base qt6-base ark spectacle latte-dock kcalc kalgebra krita discover kgpg kompare sweeper ktorrent kdevelop kamoso clazy kget krfb kwave kapptemplate kalendar cantor kmplot kirigami-gallery neochat kexi postgresql vvave zanshin gwenview ksystemlog qt6-tools code alacritty gimp labplot phonon-qt5 qt5-webkit qt5-script qt5-svg qt5-tools qt5-x11extras enchant jasper openexr libutempter docbook-xsl shared-mime-info giflib libxss upower udisks2 bzr git doxygen perl-json perl-libwww perl-xml-parser perl-io-socket-ssl akonadi xorg-server-devel libpwquality fontforge eigen libfakekey qca-qt5 xapian-core xsd gperf perl-yaml-syck intltool kdesdk qrencode libdmtx boost ruby-test-unit giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox wine-staging rust-analyzer
